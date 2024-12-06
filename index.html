@@ -4,31 +4,59 @@
             <link rel="stylesheet" href="universalstyle.css">
             <link rel="stylesheet" href="targetstyle.css">
             <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <title>Website</title>
         </head>
 
         <body>
-            <div class="header">
-                <h1 class="navtitle"><a href="/index.html">Website</a></h1>
-                    <nav>
-                        <ul>
-                            <li><a href="Lesstof/lesstof.html">Lesstof</a></li>
-                            <li><a href="zoeken.html">Zoeken</a></li>
-                            <li><a href="/Over_mij/Over_mij.html">Over mij</a></li>
-                        </ul>
-                    </nav>
+            <!--
+            <header>
+                <c-navbar />
+            </header>
+            -->
+
+            <div class="burgernav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./Lesstof/lesstof.html">Lesstof</a></li>
+                <li><a href="./zoeken.html" class="split">Zoeken</a></li>
+                <li><a href="./Over_mij/Over_mij.html" class="split">Over mij</a></li>
+                <li><a href="./Over_mij/Contact/contact.html" class="split">Contact</a></li>
             </div>
 
+            <div id="overlay" onclick="off()"></div>
+
+            <button onclick="on()">Turn on overlay effect</button>
+            <nav class="navbar">
+                <div class="header">
+                    <i class="fa fa-bars" style="font-size:36px;"></i>
+                    <div class="HamburgerReplacement"></div>
+                        <nav>
+                            <ul>
+                                <li><a href="/index.html">Home</a></li>
+                                <li><a href="Lesstof/lesstof.html">Lesstof</a></li>
+                                <li><h1>Website FDD</h1></li>
+                                <li><a href="zoeken.html" class="split">Zoeken</a></li>
+                                <li><a href="/Over_mij/Over_mij.html" class="split">Over mij</a></li>
+                            </ul>
+                        </nav>
+                </div>
+
             <div class="flex-container" id="box1">
-                <div id="img1">Imagine an image</div>
+                <div id="img1">
+                    <img src="FDDImage169.png" alt="Front-End Design & Development Thumbnail">
+                </div>
                 <div id="info1">
-                    <h2><a class="button" href="Over_mij/Over_mij.html">Over mij</a></h2>
+                    <h2>Front-End Design & Development</h2>
+                    <h5>Tekst</h5>
                 </div>
             </div>
             
-            <div class="flex-container" id="box2">
+            <h2 style="text-align: center;">Lesstof</h2>
+
+            <div class="grid-container" id="box2">
                 <div>
                     <h2><a class="button" href="Lesstof/lesstof.html">Lesstof</a></h2>
+                    <h5>tekst</h5>
                 </div>
                 <div>
                     <h3><a class="button" href="Lesstof/Design/design.html">Design</a></h3>
@@ -38,15 +66,15 @@
                     <p id="calc"></p>
                 </div>
                 <div>
-                    <h3><a class="button" href="Lesstof/Development/development.html">Development</a></h3>
-                    <img src="/Development_Thumbnail_resized.jpg" alt="Plaatje van code in een IDE">
-                </div>
-                <div>
-                    <p>another image</p>
+                    <div class="on-top">
+                        <h3><a class="button" href="Lesstof/Development/development.html">Development</a></h3>
+                    </div>
+                    <img src="DevIMG.png" alt="Plaatje van programmerende man">
                 </div>
             </div>
 
-        <script src="script.js";></script>
+        <script src="./Components/c-navbar.js";></script>
+        <script src="./Components/c-burgermenu.js";></script>
 
         </body>
     </html>

@@ -6,16 +6,25 @@ body {
 
 .header {
     display: flex;
+    padding:20px;
     align-items: center;
 }
 
-.navtitle a:link, a:visited {
-    margin:0px 30px;
-    color:black;
-    text-decoration: none;
+.burgernav {
+    position: fixed;
+    background-color: #d1ecffff;
+    width: 30%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    cursor: pointer;
 }
 
-.navtitle a:hover {text-decoration: underline;}
+.burgernav a.link {
+    color:black;
+}
 
 nav ul {
     list-style-type: none;
@@ -26,14 +35,19 @@ nav ul {
 
 nav li {float:left;}
 
+.navbar a.split {
+    float:right;
+    background-color: red;
+}
+
 nav a:link, nav a:visited {
     display:block;
     background-color: #d1ecffff;
     color:black;
     text-decoration:none;
-    padding: 15px;
+    padding: 10px 15px;
     margin:0 5px;
-    border-radius:15px;
+    border-radius:10px;
 }
 
 nav .active {background-color: blue;}
