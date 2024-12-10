@@ -10,22 +10,6 @@ body {
     align-items: center;
 }
 
-.burgernav {
-    position: fixed;
-    background-color: #d1ecffff;
-    width: 30%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 2;
-    cursor: pointer;
-}
-
-.burgernav a.link {
-    color:black;
-}
-
 nav ul {
     list-style-type: none;
     margin: 0;

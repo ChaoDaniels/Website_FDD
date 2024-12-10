@@ -1,10 +1,11 @@
 <!DOCTYPE html>
     <html>
         <head>
-            <link rel="stylesheet" href="universalstyle.css">
-            <link rel="stylesheet" href="targetstyle.css">
+            <link rel="stylesheet" href="./Stylesheets/universalstyle.css">
+            <link rel="stylesheet" href="./Stylesheets/indexstyle.css">
+            <link rel="stylesheet" href="./Stylesheets/sidebar.css">
             <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="https://kit.fontawesome.com/09a1a896ae.js" crossorigin="anonymous"></script>
             <title>Website</title>
         </head>
 
@@ -15,24 +16,14 @@
             </header>
             -->
 
-            <div class="burgernav">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./Lesstof/lesstof.html">Lesstof</a></li>
-                <li><a href="./zoeken.html" class="split">Zoeken</a></li>
-                <li><a href="./Over_mij/Over_mij.html" class="split">Over mij</a></li>
-                <li><a href="./Over_mij/Contact/contact.html" class="split">Contact</a></li>
-            </div>
+            <c-sidebar></c-sidebar>
 
-            <div id="overlay" onclick="off()"></div>
-
-            <button onclick="on()">Turn on overlay effect</button>
             <nav class="navbar">
                 <div class="header">
-                    <i class="fa fa-bars" style="font-size:36px;"></i>
+                    <button class="changebutton" onclick="sidebaropen()"><i class="fa fa-bars fa-2x"></i></button>
                     <div class="HamburgerReplacement"></div>
                         <nav>
                             <ul>
-                                <li><a href="/index.html">Home</a></li>
                                 <li><a href="Lesstof/lesstof.html">Lesstof</a></li>
                                 <li><h1>Website FDD</h1></li>
                                 <li><a href="zoeken.html" class="split">Zoeken</a></li>
@@ -40,6 +31,7 @@
                             </ul>
                         </nav>
                 </div>
+            </nav>
 
             <div class="flex-container" id="box1">
                 <div id="img1">
@@ -74,7 +66,7 @@
             </div>
 
         <script src="./Components/c-navbar.js";></script>
-        <script src="./Components/c-burgermenu.js";></script>
+        <script src="./Components/c-sidebar.js";></script>
 
         </body>
     </html>

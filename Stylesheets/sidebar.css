@@ -1,0 +1,48 @@
+.sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    display:none;
+    background-color: #d1ecffff;
+    align-items:center;
+    width: 30%;
+    height: 100%;
+    margin:0px;
+    border-right:1px solid black;
+    z-index: 2;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between items */
+}
+
+.sidebartop {
+    position: fixed;
+    width: 30%;
+    height: 19%;
+    flex-shrink: 0;
+    background: #FAFEFF;
+    border-right:1px solid #FAFEFF;
+    border-bottom: 1px solid #000;
+}
+
+/* Close Button */
+.changebutton {
+    position:relative;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+#NavHomeButton {
+    position:relative;
+    background-color:rgb(91, 180, 253);
+}
