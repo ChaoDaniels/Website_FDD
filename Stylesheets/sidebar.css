@@ -24,23 +24,22 @@
 }
 
 .sidebartop {
+    display:flex;
+    flex-direction:row;
     position: fixed;
-    width: 30%;
-    height: 80px;
-    flex-shrink: 0;
+    width: 27%;
+    height: 50px;
+    padding:20px;
     background: #FAFEFF;
     border-right:1px solid #FAFEFF;
     border-bottom: 1px solid #000;
 }
 
-/* Close Button */
 .changebutton {
-    position:relative;
     background: none;
     border: none;
     font-size: 24px;
     color: #333;
-    align-self: flex-start;
     cursor: pointer;
 }
 
