@@ -44,6 +44,9 @@
 }
 
 #NavHomeButton {
-    position:relative;
-    background-color:rgb(91, 180, 253);
+    position:absolute;
+    background-color:#d1ecffff;
+    padding: 10px 15px;
+    margin:5px 15px;
+    border-radius:10px;
 }
