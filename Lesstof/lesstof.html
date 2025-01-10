@@ -1,26 +1,24 @@
 <!DOCTYPE html>
     <html>
         <head>
-            <link rel="stylesheet" href="../universalstyle.css">
-            <link rel="stylesheet" href="../targetstyle.css">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <html lang="en"></html>
+            <link rel="stylesheet" href="../Stylesheets/main.css">
             <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="https://kit.fontawesome.com/09a1a896ae.js" crossorigin="anonymous"></script>
             <title>Lesstof</title>
         </head>
 
         <body>
-            <header>
-                <c-navbar />
-            </header>
+            <c-sidebar></c-sidebar>
+            <c-navbar></c-navbar>
 
             <div class="flex-container" id="box2">
                 <div>
                     <h3><a class="button" href="Lesstof/Design/design.html">Design</a></h3>
-                    <ul>
-                        <li><a class="minor" href="Lesstof/Design/sitemap.html">Sitemap</a></li>
-                        <li><a class="minor" href="Lesstof/Design/persona.html">Persona</a></li>
-                        <li><a class="minor" href="Lesstof/Design/paperprototype.html">Paper Prototype</a></li>
-                    </ul>
+                    <a class="minor" href="Lesstof/Design/sitemap.html">Sitemap</a>
+                    <a class="minor" href="Lesstof/Design/persona.html">Persona</a>
+                    <a class="minor" href="Lesstof/Design/paperprototype.html">Paper Prototype</a>
                 </div>
                 <div>
                     <h3><a class="button" href="Lesstof/Usability/usability.html">Usability</a></h3>
@@ -36,6 +34,6 @@
             </div>
 
             <script src="../Components/c-navbar.js";></script>
-
+            <script src="../Components/c-sidebar.js";></script>
         </body>
     </html>
