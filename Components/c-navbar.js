@@ -7,7 +7,7 @@ class NavHeaderElement extends HTMLElement {
         this.innerHTML = `
             <div class="navbar">
                 <div class="header">
-                    <button class="changebutton" onclick="sidebaropen()"><i class="fa fa-bars fa-2x"></i></button>
+                    <button class="changebutton" onclick="sidebaropen()"><i class="fa fa-bars fa-fw"></i></button>
                     <div class="HamburgerReplacement"></div>
                         <nav>
                             <ul>

@@ -1,5 +1,4 @@
 body {
-    background-color: #fafeffff;
     margin:0px;
     font-family: 'Montserrat';
 }
@@ -68,7 +67,4 @@ a.button:link, a.button:visited {
     z-index: 1;
 }
 
-a.button:hover, a.button:active {
-    text-decoration: underline;
-    background-color:rgb(91, 180, 253);
-}
+a.button:hover, a.button:active {text-decoration: underline;}

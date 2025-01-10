@@ -7,7 +7,7 @@ class SideBarElement extends HTMLElement {
       this.innerHTML = `
         <div class="sidebar" id="mySideBar">
           <div class="sidebartop">
-              <button class="changebutton" onclick="sidebarclose()"><i class="fas fa-xmark fa-2x"></i></button>
+              <button class="changebutton" onclick="sidebarclose()"><i class="fas fa-xmark fa-fw"></i></button>
               <div><a class="button" id="NavHomeButton" href="/index.html">Home</a></div>
           </div>
           <ul class="menu">
