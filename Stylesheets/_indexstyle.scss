@@ -1,3 +1,6 @@
+@use "variables" as *;
+@use "buttons";
+
 .flex-container {
     display:flex;
     flex-direction:row;
@@ -28,7 +31,7 @@
 */
 
 .grid-container > div {
-    background-color: #d1ecffff;
+    background-color: $lightblue;
     text-align: center;
     box-sizing: border-box;
     flex-grow:1;
@@ -56,18 +59,16 @@
     transform: translateX(-60%);
 }
 
-#box1 {background-color: #ecffff;}
+#box1 {background-color: $lightblue;}
 
-#box2 {background-color: blue;}
+#box2 {background-color: $blue;}
 
 #img1 {
-    background-color:#d1ecffff;
     height:100%;
     width:50%;
 }
 
 #info1 {
-    background-color: #d1ecffff;
     height:100%;
     width:50%;
 }

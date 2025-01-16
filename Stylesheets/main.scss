@@ -1,7 +1,8 @@
-@use "global" as *;
+@use "variables" as *;
 @use "buttons";
 @use "indexstyle";
 @use "sidebar";
+@use "form";
 
 body {
     background-color: $white;

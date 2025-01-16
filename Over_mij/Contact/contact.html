@@ -2,21 +2,50 @@
     <html>
         <head>
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-            <link rel="stylesheet" href="/Stylesheets/universalstyle.css">
-            <link rel="stylesheet" href="/Stylesheets/indexstyle.css">
-            <link rel="stylesheet" href="/Stylesheets/sidebar.css">
+            <html lang="en"></html>
+            <link rel="stylesheet" href="/Stylesheets/main.css">
             <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
             <script src="https://kit.fontawesome.com/09a1a896ae.js" crossorigin="anonymous"></script>
             <title>Contact</title>
         </head>
         
         <body>
-            
-            <header>
-                <c-navbar />
-            </header>
             <c-sidebar></c-sidebar>
-            <h1>Contact</h1>
+            <c-navbar></c-navbar>
+
+            <div class="container">
+                <div class="Image">
+                    <img src="" alt="Grafisch afbeelding over contactapplicaties">
+                </div>
+                <div class="Gegevens">
+                    <form class="Gegevens">
+                        <label for="Vnaam">Voornaam:</label><br>
+                        <input type="text" id="Vnaam" name="Vnaam"><br>
+                        <label for="Tussen">Tussenvoegsel:</label><br>
+                        <input type="text" id="Tussen" name="Tussen"><br>
+                        <label for="Anaam">Achternaamnaam:</label><br>
+                        <input type="text" id="Anaam" name="Anaam"><br>
+                        <!-- <label> en <form> is semantische code.
+                        <label> is bruikbaar voor screen readers (voorlezen naam)
+                        Ook telt ook als het input field als erop wordt geklikt.
+                        <label for X> zoekt naar <input id X>.
+                        <input name> is nodig voor javascript functionaliteit. Zonder geen vesturing.
+                        -->
+                    </form>
+                </div>
+                <div class="Verstuur">
+                    <form class="Verstuur">
+                        <input type="submit" value="Verstuur">
+                    </form>
+                </div>
+                <div class="Opmerkingen">
+                    <form>
+                        <label for="Freeform">It's yapping time</label>
+                        <input type="text" id="Freeform" name="Freeform">
+                    </form>
+                </div>
+            </div>
+
 
             <script src="/Components/c-navbar.js";></script>
             <script src="/Components/c-sidebar.js";></script>
