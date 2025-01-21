@@ -198,7 +198,7 @@ a.button:hover, a.button:active {
   border-top: solid black 1px;
 }
 
-.image {
+.formimage {
   grid-area: 1/1/span 4/1;
   background-color: #d1ecff;
   width: 98%;
