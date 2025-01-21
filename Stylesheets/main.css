@@ -193,30 +193,39 @@ a.button:hover, a.button:active {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   column-gap: 50px;
-  row-gap: 50px;
-  height: 540px;
+  row-gap: 30px;
+  height: 550px;
   border-top: solid black 1px;
 }
 
-.Image {
-  grid-area: 1/1/span 3/1;
+.image {
+  grid-area: 1/1/span 4/1;
   background-color: #d1ecff;
+  width: 98%;
 }
 
-.Gegevens {
+.gegevens {
   grid-area: 1/2/span 2/2;
+  overflow: hidden;
   background-color: #d1ecff;
   padding: 20px;
+  margin-top: 20px;
 }
 
-.Verstuur {
+form {
+  margin-bottom: 20px;
+}
+
+.verzenden {
   grid-area: 1/3/span 2/3;
   background-color: #d1ecff;
   padding: 20px;
+  margin-top: 20px;
+  width: 60%;
 }
 
-.Opmerkingen {
-  grid-area: 3/2/3/span 2;
+.opmerkingen {
+  grid-area: 3/2/span 2/span 2;
   background-color: #d1ecff;
   padding: 20px;
 }

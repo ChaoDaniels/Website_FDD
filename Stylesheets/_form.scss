@@ -2,35 +2,45 @@
 @use "buttons";
 
 $padding: 20px;
+$margin: 20px;
 
 .container {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     column-gap: 50px;
-    row-gap:50px;
-    height:540px;
+    row-gap:30px;
+    height:550px;
     border-top:solid black 1px;
 }
 
-.Image {
-    grid-area: 1 / 1 / span 3 / 1;
+.image {
+    grid-area: 1 / 1 / span 4 / 1;
     background-color: $lightblue;
+    width: 98%;
 }
 
-.Gegevens {
+.gegevens {
     grid-area: 1 / 2 / span 2 / 2;
+    overflow: hidden;
     background-color: $lightblue;
     padding: $padding;
+    margin-top: $margin;
 }
 
-.Verstuur {
+form {
+    margin-bottom:$margin;
+}
+
+.verzenden {
     grid-area: 1 / 3 / span 2 / 3;
     background-color: $lightblue;
     padding: $padding;
+    margin-top: $margin;
+    width:60%;
 }
 
-.Opmerkingen {
-    grid-area: 3 / 2 / 3/ span 2;
+.opmerkingen {
+    grid-area: 3 / 2 / span 2/ span 2;
     background-color: $lightblue;
     padding: $padding;
 }
