@@ -194,23 +194,54 @@ a.button:hover, a.button:active {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-auto-rows: 1fr;
   column-gap: 20px;
-  height: 500px;
+  height: 2000px;
   border-top: solid black 1px;
 }
 
 .image {
   background-color: #d1ecff;
-  grid-area: 1/1/1/span 2;
+  width: 100%;
 }
 
-#img1 {
-  grid-area: 1/1/1/span 2;
+#flatimg1 {
+  grid-row: 1;
+  grid-column: 1/span 2;
   background-color: #d1ecff;
 }
 
-#img2 {
+#flatimg2 {
   grid-column: 3;
-  grid-row: 2/2;
+  grid-row: 2;
+}
+
+#flatimg3 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+#flatimg4 {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+#flatimg5 {
+  grid-column: 1;
+  grid-row: 5;
+}
+
+#flatimg6 {
+  grid-column: 3;
+  grid-row: 6;
+}
+
+#flatimg7 {
+  grid-column: 1;
+  grid-row: 7;
+}
+
+#flatimg8 {
+  grid-column: 3;
+  grid-row: 8;
 }
 
 .introtekst {
@@ -218,8 +249,42 @@ a.button:hover, a.button:active {
 }
 
 .uitlegtekst {
+  background-color: greenyellow;
+}
+
+#tekst1 {
   grid-column: 1/span 2;
-  background-color: red;
+  grid-row: 2;
+}
+
+#tekst2 {
+  grid-column: 2/span 2;
+  grid-row: 3;
+}
+
+#tekst3 {
+  grid-column: 1/span 2;
+  grid-row: 4;
+}
+
+#tekst4 {
+  grid-column: 2/span 2;
+  grid-row: 5;
+}
+
+#tekst5 {
+  grid-column: 1/span 2;
+  grid-row: 6;
+}
+
+#tekst6 {
+  grid-column: 2/span 2;
+  grid-row: 7;
+}
+
+#tekst7 {
+  grid-column: 1/span 2;
+  grid-row: 8;
 }
 
 .container {
