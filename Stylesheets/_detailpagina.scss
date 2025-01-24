@@ -1,3 +1,42 @@
 @use "variables" as *;
 @use "buttons";
 
+// Onderlinge variabelen alleen voor columns bestemd
+$linkstekst: 1 / span 2;
+$rechtstekst: 2 / span 2;
+$linksafbeelding: 1;
+$rechtsafbeelding: 3;
+
+.detail-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: 1fr;
+    column-gap:20px;
+    height:500px;
+    border-top:solid black 1px;
+}
+
+.image {
+    background-color: $lightblue;
+    grid-area: 1 / 1 / 1 / span 2;
+}
+
+#img1 {
+    grid-area: 1 / 1 / 1 / span 2;
+    background-color: $lightblue;
+}
+
+#img2 {
+    grid-column: $rechtsafbeelding;
+    grid-row: 2 / 2;
+}
+
+
+.introtekst {
+    grid-area: 1 / 3 / 1 / 3;
+}
+
+.uitlegtekst {
+    grid-column: 1 / span 2;
+    background-color: red;
+}

@@ -21,9 +21,6 @@ header {
 
 header nav {
     flex: 1 1 100%;
-}
-
-header nav {
     list-style-type: none;
     margin-left: 20px;
     padding: 0px;
@@ -36,6 +33,7 @@ header nav h1 {
     flex: 1 1 100%;
     text-align: center;
     align-content: center;
+    font-size:35px;
 }
 
 nav li {float:left;}
