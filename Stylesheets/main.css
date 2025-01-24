@@ -250,6 +250,7 @@ a.button:hover, a.button:active {
 
 .uitlegtekst {
   background-color: greenyellow;
+  padding: 10px;
 }
 
 #tekst1 {
