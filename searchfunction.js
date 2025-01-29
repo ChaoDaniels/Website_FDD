@@ -46,5 +46,5 @@ document.addEventListener("click", function(event) {
     }
 });
 
-// Generate the list when the page loads
+// De lijst word thier gegeneerd wanneer de pagina geladen is
 document.addEventListener("DOMContentLoaded", generateList);
