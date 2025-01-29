@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-            <html lang="en"></html>
-            <link rel="stylesheet" href="./Stylesheets/main.css">
-            <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-            <script src="https://kit.fontawesome.com/09a1a896ae.js" crossorigin="anonymous"></script>
-            <title>Zoeken</title>
-        </head>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" href="./Stylesheets/main.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <script src="https://kit.fontawesome.com/09a1a896ae.js" crossorigin="anonymous"></script>
+        <title>Zoeken</title>
+    </head>
+    <body>
+        <c-sidebar></c-sidebar>
+        <c-navbar></c-navbar>
 
-        <body>
-            <c-sidebar></c-sidebar>
-            <c-navbar></c-navbar>
-
-            <div class="search">
-                <form class="searcbar" action="/action_page.php">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                    <input type="text" placeholder="Zoeken" name="search">
-                </form>
+        <div class="search">
+            <input id="myInput" onkeyup="myFunction()" type="text" placeholder="Zoeken" name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            <ul id="myUL" class="search-results">
+                <!-- List met pagina's wordt hier gegeneerd met javascript mbv de json file -->
+            </ul>
+        </div>
+        <div class="onderwerpen">
+            <div class="uitgelicht">
+                <p>teskt</p>
             </div>
-            <div class="onderwerpen">
-                <div class="uitgelicht">
-                    <p>teskt</p>
-                </div>
-            </div>
+        </div>
 
-            <script src="./Components/c-navbar.js";></script>
-        </body>
-    </html>
+        <script src="./Components/c-navbar.js"></script>
+        <script src="/searchfunction.js"></script>
+    </body>
+</html>

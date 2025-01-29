@@ -6,34 +6,62 @@
     justify-content: center;
     background-color: darkblue;
     padding: 10px;
+    position: relative; /* Ensure the list is positioned relative to the search bar */
 }
 
-form {
-    display: flex;
-    align-items: center;
-}
-
-input[type="text"] {
-    display: flex;
-    align-items: center;
-    width:70%;
+.search input[type="text"] {
+    width: 25%;
     border-radius: 50px;
     background: $lightblue;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    padding: 5px 10px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-position: 10px center;
+    background-repeat: no-repeat;
 }
 
-button {
+.search button {
     background: none;
     border: none;
     cursor: pointer;
     padding: 10px;
-    margin-left: 5px;
+    margin-left: -40px;
 }
 
-button i {
+.search button i {
     color: #000;
     font-size: 16px;
+}
+
+.search-results {
+    position: absolute;
+    overflow-y: auto; // Overflow zorgt ervoor dat list niet buiten de div valt en scrolbaar wordt.
+    max-height: 120px;
+    top: 100%;
+    background-color: $lightblue;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    z-index: 3;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.search-results li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.search-results li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.search-results li:hover {
+    background-color: $blue;
 }
 
 .onderwerpen {
