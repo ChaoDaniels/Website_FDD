@@ -326,25 +326,6 @@ textarea {
   font-size: 16px;
   z-index: 1;
 }
-.search input[type=text] {
-  width: 100%;
-  border-radius: 50px;
-  background: #d1ecff;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-  padding: 10px 20px 10px 40px;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  z-index: 1;
-}
-.search .searchicon {
-  position: absolute;
-  left: 15px;
-  color: #000;
-  font-size: 16px;
-  z-index: 2;
-  pointer-events: none;
-}
 .search .searchicon {
   position: absolute;
   left: 15px;
@@ -373,17 +354,12 @@ textarea {
   padding: 10px;
   border-bottom: 1px solid #ddd;
 }
-.search-results li {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-}
 .search-results li a {
   padding-left: 30px;
   color: black;
   text-decoration: none;
   display: block;
 }
-
 .search-results li:hover {
   background-color: rgb(91, 180, 253);
 }
@@ -393,15 +369,14 @@ textarea {
   padding: 50px;
 }
 
-.uitgelicht .overzicht {
-  margin-bottom: 20px;
-}
-.uitgelicht p, .uitgelicht .overzicht p {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
+/* .uitgelicht {
+    .overzicht {margin-bottom: 20px;}
+    p, .overzicht p {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+}*/
 .rij {
   display: flex;
   flex-wrap: wrap;
@@ -415,7 +390,7 @@ textarea {
   color: black;
   padding: 20px 10px;
   border-radius: 10px;
-  flex: 1 1 10%; /* Adjusted the width to be less wide */
+  flex: 1 1 10%;
   text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
@@ -427,7 +402,6 @@ textarea {
 .onderwerp a:visited {
   color: black;
 }
-
 .onderwerp:hover {
   background-color: rgb(40.6144578313, 156.9578313253, 252.3855421687);
 }
@@ -443,18 +417,17 @@ textarea {
   grid-template-rows: repeat(4, 200px);
 }
 .verwijzing-container .design {
-  grid-template-rows: repeat(8, 200px);
+  grid-template-rows: repeat(10, 200px);
 }
 .verwijzing-container .usability {
   grid-template-rows: repeat(5, 200px);
 }
 .verwijzing-container .development {
-  grid-template-rows: repeat(8, 200px);
+  grid-template-rows: repeat(9, 200px);
 }
 
 .image {
   grid-column: 3;
-  background-color: #d1ecff;
   width: 100%;
 }
 
@@ -489,6 +462,10 @@ textarea {
 
 .flatimg8 {
   grid-row: 8;
+}
+
+.flatimg9 {
+  grid-row: 9;
 }
 
 .uitlegtekst {
@@ -530,6 +507,10 @@ textarea {
   grid-row: 8;
 }
 
+.tekst8 {
+  grid-row: 9;
+}
+
 .detail-container {
   max-width: 100%;
   margin: 0 auto;
@@ -544,6 +525,9 @@ textarea {
   border-top: black 1px solid;
   background-color: #d1ecff;
   padding: 16px;
+}
+.intro p.vraag {
+  font-size: 22px;
 }
 
 .uitleg {
