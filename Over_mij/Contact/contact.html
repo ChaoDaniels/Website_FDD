@@ -3,7 +3,7 @@
         <head>
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
             <html lang="en"></html>
-            <link rel="stylesheet" href="/Stylesheets/main.css">
+            <link rel="stylesheet" href="../../Stylesheets/main.css">
             <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
             <script src="https://kit.fontawesome.com/09a1a896ae.js" crossorigin="anonymous"></script>
             <title>Contact</title>
@@ -15,52 +15,38 @@
 
             <div class="container">
                 <div class="formimage">
-                    <img src="contact_upscaled_notext 1.png" class="formimage" alt="Grafisch afbeelding over contactapplicaties">
+                    <img src="" class="formimage" alt="Grafisch afbeelding over contactapplicaties">
                 </div>
                 <div class="gegevens">
                     <h1>Gegevens</h1>
-                    <form id="contactFormulier">
+                    <form id="contactFormulier" action="https://formspree.io/f/xjkgrvvl" method="POST">
                         <div class="form-group">
-                            <label for="Vnaam">Voornaam</label>
-                            <input type="text" id="Vnaam" name="Vnaam" placeholder="Voornaam">
+                            <label for="firstName">Voornaam</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="Voornaam" required>
                         </div>
                         <div class="form-group">
-                            <label for="Tussen">Tussenvoegsel</label>
-                            <input type="text" id="Tussen" name="Tussen" placeholder="Tussenvoegsel">
+                            <label for="lastName">Achternaam </label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Achternaam" required>
                         </div>
                         <div class="form-group">
-                            <label for="Anaam">Achternaam</label>
-                            <input type="text" id="Anaam" name="Anaam" placeholder="Achternaam">
+                            <label for="email">E-mail adres</label>
+                            <input type="email" id="email" name="email" placeholder="E-mail adres" requiered>
                         </div>
                         <div class="form-group">
-                            <label for="Mail">E-mail adres*</label>
-                            <input type="email" id="Mail" name="Mail" placeholder="E-mail adres">
+                            <label for="msg">Bericht</label>
+                            <textarea type="text" id="msg" name="msg" placeholder="Plaats hier uw bericht" required></textarea>
                         </div>
-                        <div class="form-group">
-                            <button type="submit" class="submit-btn">Verstuur</button>
-                        </div>
-                        <p class="bottomtxt">* E-mail adres is optioneel</p>
-
-                        <!-- <label> en <form> is semantische code.
-                        <label> is bruikbaar voor screen readers (voorlezen naam)
-                        Ook telt ook als het input field als erop wordt geklikt.
-                        <label for X> zoekt naar <input id X>.
-                        <input name> is nodig voor javascript functionaliteit. Zonder geen vesturing.
-                        -->
+                        <button type="submit" class="submit-btn">Verstuur</button>
                     </form>
                 </div>
                 <div class="contactinfo">
                     <h2>Contact</h2>
-                </div>
-                <div class="opmerkingen">
-                    <form>
-                        <textarea type="text" id="Freeform" name="Freeform" placeholder="Plaats hier uw bericht"></textarea>
-                    </form>
+                    <p>Alle velden zijn verplicht.</p>
+                    <P>Bij het versturen worden de gegevens en het bericht verstuurd naar Formspree.</P>
                 </div>
             </div>
 
-            <script src="/Components/c-navbar.js";></script>
-            <script src="/Components/c-sidebar.js";></script>
+            <script src="../../Components/c-navbar.js";></script>
             <script src="./form.js";></script>
         </body>
     </html>

@@ -1,64 +1,75 @@
 @use "variables" as *;
 @use "buttons" as *;
 
-$padding: 20px;
-$margin: 20px;
+$spacing20: 20px;
+$maxsizing: calc(100% - 2 * $spacing20);
 
 .container {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     column-gap: 50px;
-    row-gap: 30px;
-    height: 550px;
+    height: 500px;
     border-top: solid black 1px;
+    grid-template-areas:
+        "image gegevens contactinfo"
 }
 
 .formimage {
-    grid-area: 1 / 1 / span 4 / 1;
+    grid-area: image;
     background-color: $lightblue;
     width: 99%;
 }
 
 .gegevens {
-    grid-area: 1 / 2 / span 2 / 2;
+    grid-area: gegevens;
     overflow: hidden;
     background-color: $lightblue;
-    padding: $padding;
-    margin-top: $margin;
+    padding: $spacing20;
+    margin-top: $spacing20;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: $margin;
+    gap: $spacing20;
+    align-items: center;
 }
 
 .form-group {
     display: flex;
     align-items: center;
-    gap: $margin;
+    gap: $spacing20;
+    width: 100%;
 }
 
 label {flex: 0 0 150px;} // Vaste lengte voor labels
 
 input[type="text"],
 input[type="email"],
-textarea {flex: 1;} // Input velden nemen de overgebleven ruimte
+textarea {
+    font-family: 'Montserrat';
+    font-size:13px;
+    flex: 1; // Input velden nemen de overgebleven ruimte
+    width:100%;
+}
+
+textarea{
+    height:70px;
+    resize:vertical;
+    max-height:130px;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    @include button-styles;
+    margin-top: $spacing20;
+    align-self: center;
+}
 
 .contactinfo {
-    grid-area: 1 / 3 / span 2 / 3;
+    grid-area: contactinfo;
     background-color: $lightblue;
-    padding: $padding;
-    margin-top: $margin;
-    width: 60%;
+    padding: $spacing20;
+    margin-top: $spacing20;
+    width:75%;
 }
-
-.submit-btn {@include button-styles;}
-
-.opmerkingen {
-    grid-area: 3 / 2 / span 2 / span 2;
-    background-color: $lightblue;
-    padding: $padding;
-}
-
-.bottomtxt {font-size:12px;}

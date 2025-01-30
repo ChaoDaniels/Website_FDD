@@ -1,30 +1,28 @@
-// Select the form
 const form = document.getElementById('contactFormulier');
 
-// Add an event listener for form submission
 form.addEventListener('submit', function(event) {
-  // Prevent default form submission behavior
+  // Voorkom normaal gedrag bij het versturen van een form
   event.preventDefault();
 
-  // Collect form data
+  // Verzamel de gegevens
   const formData = {
-    name: document.getElementById('Vnaam').value,
-    email: document.getElementById('Mail').value,
-//    message: document.getElementById('message').value,
+    name: document.getElementById('firstName').value,
+    email: document.getElementById('email').value,
+    message: document.getElementById('msg').value,
   };
 
-  // Simple validation (example: check if fields are not empty)
-  if (!formData.name || !formData.email) {
-    alert('Please fill out all fields.');
+  // Check of alle velden ingevuld zijn en meldt als dat niet is gebeurd.
+  if (!formData.name || !formData.email || !formData.message) {
+    alert('Vul alle velden in.');
     return;
   }
 
-  // Example: Log the data or send it to a server
+  // Log data
   console.log('Form Data:', formData);
 
-  // Optionally reset the form
   form.reset();
 
-  // Feedback to the user
-  alert('Form submitted successfully!');
+  alert('Contactgegevens succesvol verstuurd!');
+
+  form.submit();
 });
