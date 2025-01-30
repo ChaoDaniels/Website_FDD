@@ -28,11 +28,11 @@
   padding:13px 12px;
 }
 
-nav a {
+nav a, .blue-btn {
   @include button-styles;
   background-color: $lightblue;
-  &:hover {background-color: $blue;}
 }
+
 
 a.button-link {
   @include button-styles;

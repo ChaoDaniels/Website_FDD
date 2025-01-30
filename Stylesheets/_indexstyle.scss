@@ -2,20 +2,31 @@
 @use "buttons";
 
 .flex-container {
-    display:flex;
-    flex-direction:row;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between; /* or other appropriate value */
+    justify-content: space-between;
     align-items: center;
-    height:250px;
+    height: auto; // Adjust height to auto to fit content
     border-style: solid;
-    border-width:1px;
-    margin-bottom: 50px;
+    border-width: 1px;
+    margin-bottom: 3%;
+    background-color: $lightblue;
 
     img {
-        width: 100%;
-        height: 100%;
+        width: 50%; // Adjust width to fit content
         object-fit: cover;
+        margin-right: 20px; // Add margin to the right of the image
+    }
+
+    #info1 {
+        flex: 1; // Allow the text container to take the remaining space
+        padding: 10px;
+        box-sizing: border-box;
+        a {
+            float:right;
+            margin-right:10%;
+        }
     }
 }
 
@@ -50,29 +61,9 @@
 }
 */
 
-.deco_img {
-    width:100%;
-    height:100%;
-}
-
+.deco_img {width:100%;height:100%;}
 .imgbutton {transform: translateX(-60%);}
-
 #box2 {background-color: $lightblue;}
-
-#img1 {
-    height:100%;
-    width:50%;
-    background-color: $lightblue;
-}
-
-#info1 {
-    height:100%;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    flex-grow: 1;
-    flex-shrink: 1;
-    background-color: $lightblue;
-}
 
 .on-top {
     width: 100%;
@@ -83,8 +74,5 @@
     justify-content: center;
     align-items: center;
     transition:ease-in-out .2s;
-}
-
-.on-top:has(h3:hover) {
-    background-color: rgba(0, 0, 0, 0.2);
+    &:has(h3:hover) {background-color: rgba(0, 0, 0, 0.2);}
 }
