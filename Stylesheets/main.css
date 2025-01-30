@@ -76,17 +76,11 @@ a.button-link:hover, a.button-link:active {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between; /* or other appropriate value */
-  justify-content: space-between; /* or other appropriate value */
   align-items: center;
   height: 250px;
   border-style: solid;
   border-width: 1px;
   margin-bottom: 50px;
-}
-.flex-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .flex-container img {
   width: 100%;
@@ -121,13 +115,7 @@ a.button-link:hover, a.button-link:active {
     .flex-container {
         grid-template-columns: repeat(2, 1fr);
     }
-/*
-@media screen and (max-width: 600px) {
-    .flex-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
-*/
 */
 .deco_img {
   width: 100%;
@@ -139,7 +127,6 @@ a.button-link:hover, a.button-link:active {
 }
 
 #box2 {
-#box2 {
   background-color: #d1ecff;
 }
 
@@ -147,16 +134,10 @@ a.button-link:hover, a.button-link:active {
   height: 100%;
   width: 50%;
   background-color: #d1ecff;
-  background-color: #d1ecff;
 }
 
 #info1 {
   height: 100%;
-  padding: 10px 20px;
-  box-sizing: border-box;
-  flex-grow: 1;
-  flex-shrink: 1;
-  background-color: #d1ecff;
   padding: 10px 20px;
   box-sizing: border-box;
   flex-grow: 1;
@@ -347,7 +328,6 @@ a.button-link:hover, a.button-link:active {
   grid-area: 1/1/span 4/1;
   background-color: #d1ecff;
   width: 99%;
-  width: 99%;
 }
 
 .gegevens {
@@ -362,28 +342,8 @@ form {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 
-.form-group {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-label {
-  flex: 0 0 150px;
-}
-
-input[type=text],
-input[type=email],
-textarea {
-  flex: 1;
-}
-
-.contactinfo {
 .form-group {
   display: flex;
   align-items: center;
@@ -433,10 +393,6 @@ textarea {
   font-size: 12px;
 }
 
-.bottomtxt {
-  font-size: 12px;
-}
-
 .search-container {
   display: flex;
   justify-content: center;
@@ -468,6 +424,25 @@ textarea {
   font-size: 16px;
   z-index: 1;
 }
+.search input[type=text] {
+  width: 100%;
+  border-radius: 50px;
+  background: #d1ecff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  padding: 10px 20px 10px 40px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  z-index: 1;
+}
+.search .searchicon {
+  position: absolute;
+  left: 15px;
+  color: #000;
+  font-size: 16px;
+  z-index: 2;
+  pointer-events: none;
+}
 .search .searchicon {
   position: absolute;
   left: 15px;
@@ -496,6 +471,10 @@ textarea {
   padding: 10px;
   border-bottom: 1px solid #ddd;
 }
+.search-results li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
 .search-results li a {
   padding-left: 30px;
   color: black;
@@ -509,46 +488,6 @@ textarea {
 
 .onderwerpen {
   background-color: #d1ecff;
-  padding: 50px;
-}
-
-.uitgelicht .overzicht {
-  margin-bottom: 20px;
-}
-.uitgelicht p, .uitgelicht .overzicht p {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.rij {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
-
-.onderwerp {
-  background-color: #fafeff;
-  color: black;
-  padding: 20px 10px;
-  border-radius: 10px;
-  flex: 1 1 10%; /* Adjusted the width to be less wide */
-  text-align: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  box-sizing: border-box;
-}
-.onderwerp a {
-  color: black;
-  text-decoration: none;
-}
-.onderwerp a:visited {
-  color: black;
-}
-
-.onderwerp:hover {
-  background-color: rgb(40.6144578313, 156.9578313253, 252.3855421687);
   padding: 50px;
 }
 
@@ -611,9 +550,6 @@ header nav {
   padding: 0px;
   overflow: hidden;
   display: flex;
-}
-header nav li {
-  float: left;
 }
 header nav li {
   float: left;
