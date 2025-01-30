@@ -1,13 +1,13 @@
 @use "variables" as *;
 @use "buttons";
 
-.detail-container {
+.verwijzing-container {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     row-gap:20px;
     column-gap: 10px;
     border-top:solid black 1px;
-    .lesstof {grid-template-rows: repeat(5, 200px);}
+    .lesstof {grid-template-rows: repeat(4, 200px);}
     .design {grid-template-rows: repeat(8, 200px);}
     .usability {grid-template-rows: repeat(5, 200px);}
     .development {grid-template-rows: repeat(8, 200px);}

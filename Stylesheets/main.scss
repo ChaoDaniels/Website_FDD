@@ -2,14 +2,16 @@
 @use "buttons";
 @use "indexstyle";
 @use "sidebar";
-@use "verwijzingpagina";
 @use "form";
 @use "zoekpagina";
+@use "verwijzingpagina";
+@use "detailpagina";
 
 body {
     background-color: $white;
     margin:0px;
     font-family: 'Montserrat';
+    overflow-x: hidden;
 }
 
 header {
@@ -28,7 +30,6 @@ header {
         display: flex;
 
         li {float:left;}
-
         h1 {
             margin: 0;
             flex: 1 1 100%;
