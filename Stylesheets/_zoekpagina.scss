@@ -12,10 +12,6 @@
     height: 280px;
 }
 
-.search-image {
-    z-index: 0;
-}
-
 .search {
     display: flex;
     justify-content: center;
@@ -24,27 +20,27 @@
     max-width: 600px; /* Adjust the max-width as needed */
     position: relative;
     z-index: 1;
-}
 
-.search input[type="text"] {
-    width: 100%;
-    border-radius: 50px;
-    background: $lightblue;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    padding: 10px 20px 10px 40px;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    z-index: 1;
-}
+    input[type="text"] {
+        width: 100%;
+        border-radius: 50px;
+        background: $lightblue;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+        padding: 10px 20px 10px 40px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        z-index: 1;
+    }
 
-.search .searchicon {
-    position: absolute;
-    left: 15px;
-    color: #000;
-    font-size: 16px;
-    z-index: 2;
-    pointer-events: none; // Voorkoomt dat het icoon in de weg van het input veld zit
+    .searchicon {
+        position: absolute;
+        left: 15px;
+        color: #000;
+        font-size: 16px;
+        z-index: 2;
+        pointer-events: none; // Voorkoomt dat het icoon in de weg van het input veld zit
+    }
 }
 
 .search-results {
@@ -61,22 +57,56 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
-}
 
-.search-results li {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-}
+    li {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
 
-.search-results li a {
-    padding-left:30px;
-    color: black;
-    text-decoration: none;
-    display: block;
+    li a {
+        padding-left:30px;
+        color: black;
+        text-decoration: none;
+        display: block;
+}
 }
 
 .search-results li:hover {background-color: $blue;}
 
 .onderwerpen {
     background-color: $lightblue;
+    padding: 50px;
 }
+
+.uitgelicht {
+    .overzicht {margin-bottom: 20px;}
+    p, .overzicht p {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+}
+
+.rij {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom:30px;
+}
+
+.onderwerp {
+    background-color: $white;
+    color: black;
+    padding: 20px 10px;
+    border-radius: 10px;
+    flex: 1 1 calc(10%); /* Adjusted the width to be less wide */
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+
+    a {color:black; text-decoration: none;}
+    a:visited {color: black;}
+}
+
+.onderwerp:hover {background-color: darken($blue, 10%);}

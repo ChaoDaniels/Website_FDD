@@ -7,15 +7,12 @@ nav a:link, nav a:visited {
   margin: 5px 15px;
   border-radius: 10px;
 }
-
 nav .active {
   background-color: rgb(91, 180, 253);
 }
-
 nav a:hover:not(.active) {
   background-color: rgb(91, 180, 253);
 }
-
 nav a:hover.active {
   background-color: #fafeff;
 }
@@ -50,12 +47,17 @@ a.button:hover, a.button:active {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between; /* or other appropriate value */
   align-items: center;
   height: 250px;
   border-style: solid;
   border-width: 1px;
   margin-bottom: 50px;
+}
+.flex-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .grid-container {
@@ -66,14 +68,6 @@ a.button:hover, a.button:active {
   border-width: 1px;
   margin-bottom: 50px;
 }
-
-/*
-@media screen and (max-width: 600px) {
-    .flex-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-*/
 .grid-container > div {
   background-color: #d1ecff;
   text-align: center;
@@ -88,12 +82,13 @@ a.button:hover, a.button:active {
   position: relative;
 }
 
-.flex-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+/*
+@media screen and (max-width: 600px) {
+    .flex-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
-
+*/
 .deco_img {
   width: 100%;
   height: 100%;
@@ -103,22 +98,23 @@ a.button:hover, a.button:active {
   transform: translateX(-60%);
 }
 
-#box1 {
-  background-color: #d1ecff;
-}
-
 #box2 {
-  background-color: rgb(91, 180, 253);
+  background-color: #d1ecff;
 }
 
 #img1 {
   height: 100%;
   width: 50%;
+  background-color: #d1ecff;
 }
 
 #info1 {
   height: 100%;
-  width: 50%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: #d1ecff;
 }
 
 .on-top {
@@ -303,7 +299,7 @@ a.button:hover, a.button:active {
 .formimage {
   grid-area: 1/1/span 4/1;
   background-color: #d1ecff;
-  width: 98%;
+  width: 99%;
 }
 
 .gegevens {
@@ -315,10 +311,28 @@ a.button:hover, a.button:active {
 }
 
 form {
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.verzenden {
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+label {
+  flex: 0 0 150px;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  flex: 1;
+}
+
+.contactinfo {
   grid-area: 1/3/span 2/3;
   background-color: #d1ecff;
   padding: 20px;
@@ -332,6 +346,10 @@ form {
   padding: 20px;
 }
 
+.bottomtxt {
+  font-size: 12px;
+}
+
 .search-container {
   display: flex;
   justify-content: center;
@@ -343,10 +361,6 @@ form {
   height: 280px;
 }
 
-.search-image {
-  z-index: 0;
-}
-
 .search {
   display: flex;
   justify-content: center;
@@ -356,7 +370,6 @@ form {
   position: relative;
   z-index: 1;
 }
-
 .search input[type=text] {
   width: 100%;
   border-radius: 50px;
@@ -368,7 +381,6 @@ form {
   font-size: 16px;
   z-index: 1;
 }
-
 .search .searchicon {
   position: absolute;
   left: 15px;
@@ -393,12 +405,10 @@ form {
   margin: 0;
   list-style-type: none;
 }
-
 .search-results li {
   padding: 10px;
   border-bottom: 1px solid #ddd;
 }
-
 .search-results li a {
   padding-left: 30px;
   color: black;
@@ -412,6 +422,46 @@ form {
 
 .onderwerpen {
   background-color: #d1ecff;
+  padding: 50px;
+}
+
+.uitgelicht .overzicht {
+  margin-bottom: 20px;
+}
+.uitgelicht p, .uitgelicht .overzicht p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.rij {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.onderwerp {
+  background-color: #fafeff;
+  color: black;
+  padding: 20px 10px;
+  border-radius: 10px;
+  flex: 1 1 10%; /* Adjusted the width to be less wide */
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+}
+.onderwerp a {
+  color: black;
+  text-decoration: none;
+}
+.onderwerp a:visited {
+  color: black;
+}
+
+.onderwerp:hover {
+  background-color: rgb(40.6144578313, 156.9578313253, 252.3855421687);
 }
 
 body {
@@ -427,7 +477,6 @@ header {
   padding: 20px;
   background-color: #fafeff;
 }
-
 header nav {
   flex: 1 1 100%;
   list-style-type: none;
@@ -436,17 +485,15 @@ header nav {
   overflow: hidden;
   display: flex;
 }
-
+header nav li {
+  float: left;
+}
 header nav h1 {
   margin: 0;
   flex: 1 1 100%;
   text-align: center;
   align-content: center;
   font-size: 35px;
-}
-
-nav li {
-  float: left;
 }
 
 /*# sourceMappingURL=main.css.map */
