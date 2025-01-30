@@ -17,14 +17,14 @@ class NavHeaderElement extends HTMLElement {
         this.innerHTML = `
             <div class="navbar">
                 <header>
-                <button class="changebutton" onclick="sidebaropen()"><i class="fa fa-bars fa-2x"></i></button>
-                <nav>
-                    <a href="${base}/index.html">Home</a>
-                    <h1>Website FDD</h1>
-                    <a href="${base}/zoeken.html">Zoeken</a>
-                    <a href="${base}/Over_mij/Contact/contact.html">Contact</a>
-                </nav>
-            </header>
+                    <button class="changebutton" onclick="sidebaropen()"><i class="fa fa-bars fa-2x"></i></button>
+                    <nav>
+                        <a href="${base}/index.html">Home</a>
+                        <h1>Website FDD</h1>
+                        <a href="${base}/zoeken.html">Zoeken</a>
+                        <a href="${base}/Over_mij/Contact/contact.html">Contact</a>
+                    </nav>
+                </header>
             </div>
         `;
     }
@@ -43,17 +43,17 @@ class SideBarElement extends HTMLElement {
           <div class="sidebar" id="mySideBar">
             <div class="sidebartop">
                 <button class="changebutton" onclick="sidebarclose()"><i class="fas fa-xmark" style="font-size: 56px;"></i></button>
-                <div><a class="button" id="NavHomeButton" href="${base}/index.html">Home</a></div>
+                <div><a class="button-basic" id="NavHomeButton" href="${base}/index.html">Home</a></div>
             </div>
-            <ul class="menu">
-                <li><a class="button" href="${base}/zoeken.html" class="split">Zoeken</a></li>
-                <li><a class="button" href="${base}/Lesstof/lesstof.html">Lesstof</a></li>
-                <li><a class="button" href="${base}/Lesstof/Design/design.html">Design</a></li>
-                <li><a class="button" href="${base}/Lesstof/Usability/usability.html">Usability</a></li>
-                <li><a class="button" href="${base}/Lesstof/Development/development.html">Development</a></li>
-                <li><a class="button" href="${base}/Over_mij/Over_mij.html" class="split">Over mij</a></li>
-                <li><a class="button" href="${base}/Over_mij/Contact/contact.html" class="split">Contact</a></li>
-            </ul>
+            <div class="menu">
+                <a class="sidebar-btn" href="${base}/zoeken.html" class="split">Zoeken</a>
+                <a class="sidebar-btn" href="${base}/Lesstof/lesstof.html">Lesstof</a>
+                <a class="sidebar-btn" href="${base}/Lesstof/Design/design.html">Design</a>
+                <a class="sidebar-btn" href="${base}/Lesstof/Usability/usability.html">Usability</a>
+                <a class="sidebar-btn" href="${base}/Lesstof/Development/development.html">Development</a>
+                <a class="sidebar-btn" href="${base}/Over_mij/Over_mij.html" class="split">Over mij</a>
+                <a class="sidebar-btn" href="${base}/Over_mij/Contact/contact.html" class="split">Contact</a>
+            </div>
           </div>
         `;
     }

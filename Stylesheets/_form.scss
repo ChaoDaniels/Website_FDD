@@ -1,5 +1,5 @@
 @use "variables" as *;
-@use "buttons";
+@use "buttons" as *;
 
 $padding: 20px;
 $margin: 20px;
@@ -8,15 +8,15 @@ $margin: 20px;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     column-gap: 50px;
-    row-gap:30px;
-    height:550px;
-    border-top:solid black 1px;
+    row-gap: 30px;
+    height: 550px;
+    border-top: solid black 1px;
 }
 
 .formimage {
     grid-area: 1 / 1 / span 4 / 1;
     background-color: $lightblue;
-    width: 98%;
+    width: 99%;
 }
 
 .gegevens {
@@ -28,19 +28,37 @@ $margin: 20px;
 }
 
 form {
-    margin-bottom:$margin;
+    display: flex;
+    flex-direction: column;
+    gap: $margin;
 }
 
-.verzenden {
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: $margin;
+}
+
+label {flex: 0 0 150px;} // Vaste lengte voor labels
+
+input[type="text"],
+input[type="email"],
+textarea {flex: 1;} // Input velden nemen de overgebleven ruimte
+
+.contactinfo {
     grid-area: 1 / 3 / span 2 / 3;
     background-color: $lightblue;
     padding: $padding;
     margin-top: $margin;
-    width:60%;
+    width: 60%;
 }
 
+.submit-btn {@include button-styles;}
+
 .opmerkingen {
-    grid-area: 3 / 2 / span 2/ span 2;
+    grid-area: 3 / 2 / span 2 / span 2;
     background-color: $lightblue;
     padding: $padding;
 }
+
+.bottomtxt {font-size:12px;}

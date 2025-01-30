@@ -25,7 +25,6 @@ $rechtsafbeelding: 3;
     grid-area: 1 / 1 / 1 / span 2;
     background-color: $lightblue;
 }
-
 #flatimg2 {grid-column: $rechtsafbeelding; grid-row: 2;}
 #flatimg3 {grid-column: $linksafbeelding; grid-row: 3;}
 #flatimg4 {grid-column: $rechtsafbeelding; grid-row: 4;}

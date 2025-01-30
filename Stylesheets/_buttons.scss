@@ -1,49 +1,44 @@
 @use "variables" as *;
 
-nav a:link, nav a:visited {
-  display: block;
-  background-color: $lightblue;
+@mixin button-styles {
   color: black;
   text-decoration: none;
+  border-radius: 10px;
+  text-align: center;
   padding: 10px 15px;
   margin: 5px 15px;
-  border-radius: 10px;
+  z-index: 1;
+
+  &:hover, &:active {
+    text-decoration: underline;
+    background-color: $blue;
+    border-color: $blue;
+  }
 }
 
-nav .active {
-  background-color: $blue;
-}
-
-nav a:hover:not(.active) {
-  background-color: $blue;
-}
-
-nav a:hover.active {
+.button-basic {
+  @include button-styles;
   background-color: $white;
 }
 
-li a {
-  display: block;
-  color: white;
-  text-decoration: none;
+.sidebar-btn {
+  @include button-styles();
+  background-color: $white;
+  margin: 1px 0 5px 40px;
+  padding:13px 12px;
 }
 
-a.button:link, a.button:visited {
-  color: black;
-  text-decoration: none;
+nav a {
+  @include button-styles;
+  background-color: $lightblue;
+  &:hover {background-color: $blue;}
+}
+
+a.button-link {
+  @include button-styles;
   background-color: $white;
-  border-radius: 10px;
   border-color: $white;
   border-style: solid;
   border-width: 1px;
-  text-align: center;
   width: 100px;
-  padding: 10px;
-  z-index: 1;
-}
-
-a.button:hover, a.button:active {
-  text-decoration: underline;
-  background-color: $blue;
-  border-color: $blue;
 }
