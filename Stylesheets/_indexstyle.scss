@@ -11,7 +11,7 @@
     border-style: solid;
     border-width: 1px;
     margin-bottom: 3%;
-    background-color: $lightblue;
+    background-color: var(--accent-color);
 
     img {
         width: 50%; // Adjust width to fit content
@@ -39,7 +39,7 @@
     margin-bottom: 50px;
 
     > div {
-    background-color: $lightblue;
+    background-color: var(--accent-color);
     text-align: center;
     box-sizing: border-box;
     flex-grow:1;
@@ -63,7 +63,7 @@
 
 .deco_img {width:100%;height:100%;}
 .imgbutton {transform: translateX(-60%);}
-#box2 {background-color: $lightblue;}
+#box2 {background-color: var(--accent-color);}
 
 .on-top {
     width: 100%;

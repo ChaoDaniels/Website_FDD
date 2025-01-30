@@ -30,7 +30,7 @@
 .uitlegtekst {
     grid-column: 1 / span 2;
     padding: 10px;
-    background-color: $lightblue;
+    background-color: var(--accent-color);
 }
 .tekst0 {grid-row: 1; grid-column: 3;}
 .tekst1 {grid-row: 2;}

@@ -16,14 +16,14 @@ $maxsizing: calc(100% - 2 * $spacing20);
 
 .formimage {
     grid-area: image;
-    background-color: $lightblue;
+    background-color: var(--accent-color);
     width: 99%;
 }
 
 .gegevens {
     grid-area: gegevens;
     overflow: hidden;
-    background-color: $lightblue;
+    background-color: var(--accent-color);
     padding: $spacing20;
     margin-top: $spacing20;
 }
@@ -68,7 +68,7 @@ textarea{
 
 .contactinfo {
     grid-area: contactinfo;
-    background-color: $lightblue;
+    background-color: var(--accent-color);
     padding: $spacing20;
     margin-top: $spacing20;
     width:75%;

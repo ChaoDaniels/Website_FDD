@@ -6,7 +6,7 @@
     display: flex;
     display:none;
     flex-direction: column;
-    background-color: $lightblue;
+    background-color: var(--accent-color);
     align-items:center;
     width: 30%;
     height: 100%;
@@ -48,7 +48,7 @@
 
 #NavHomeButton {
     position:absolute;
-    background-color:$lightblue;
+    background-color:var(--accent-color);
     padding: 10px 15px;
     margin:5px 15px;
     border-radius:10px;
