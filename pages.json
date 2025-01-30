@@ -6,7 +6,8 @@
     { "name": "Frameworks en SCSS", "url": "Lesstof/Development/frameworks_scss.html" },
     { "name": "Gestaltprincipes", "url": "Lesstof/Design/gestaltprincipes.html" },
     { "name": "Git", "url": "Lesstof/Development/git.html" },
-    { "name": "High-Fidelity Prototypes", "url": "Lesstof/Design/hifi.html" },
+    { "name": "Home", "url": "index.html"},
+    { "name": "High-Fidelity Prototypes", "url": "Lesstof/Design/hifi_prototype.html" },
     { "name": "HyperText Markup Language", "url": "Lesstof/Development/htmlpagina.html" },
     { "name": "JavaScript", "url": "Lesstof/Development/javascriptpagina.html" },
     { "name": "Moodboard", "url": "Lesstof/Design/moodboard.html" },
@@ -14,10 +15,11 @@
     { "name": "Paper Prototype", "url": "Lesstof/Design/paperprototype.html" },
     { "name": "Persona", "url": "Lesstof/Design/persona.html" },
     { "name": "Responsive Web Design", "url": "Lesstof/Development/rwd.html" },
-    { "name": "Search Engine Optimisation", "url": "Lesstof/Design/seo.html" },
+    { "name": "Search Engine Optimisation", "url": "Lesstof/Development/seo.html" },
     { "name": "Sitemap", "url": "Lesstof/Design/sitemap.html" },
     { "name": "Toegankelijkheidsrapport", "url": "Lesstof/Usability/toegankelijkheidsrapport.html" },
     { "name": "Usability", "url": "Lesstof/Usability/usability.html" },
     { "name": "Usability Testing", "url": "Lesstof/Usability/usabilitytesting.html" },
-    { "name": "WCAG", "url": "Lesstof/Usability/wcag.html" }
+    { "name": "WCAG", "url": "Lesstof/Usability/wcag.html" },
+    { "name": "Wireframing", "url": "Lesstof/Design/wireframing.html"}
 ]
