@@ -216,11 +216,21 @@ a.button-link:hover, a.button-link:active {
 .detail-container {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  grid-auto-rows: 1fr;
   row-gap: 20px;
   column-gap: 10px;
-  height: 2000px;
   border-top: solid black 1px;
+}
+.detail-container .lesstof {
+  grid-template-rows: repeat(5, 200px);
+}
+.detail-container .design {
+  grid-template-rows: repeat(8, 200px);
+}
+.detail-container .usability {
+  grid-template-rows: repeat(5, 200px);
+}
+.detail-container .development {
+  grid-template-rows: repeat(8, 200px);
 }
 
 .image {
