@@ -62,6 +62,7 @@ textarea{
 
 .submit-btn {
     @include button-styles;
+    color:black;
     margin-top: $spacing20;
     align-self: center;
 }

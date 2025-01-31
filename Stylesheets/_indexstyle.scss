@@ -19,7 +19,7 @@
         margin-right: 20px; // Add margin to the right of the image
     }
 
-    #info1 {
+    > div {
         flex: 1; // Allow the text container to take the remaining space
         padding: 10px;
         box-sizing: border-box;

@@ -9,6 +9,7 @@
     display: grid;
     grid-template-rows: auto auto;
     gap: 16px;
+    h2 {margin-top: 50px;}
 }
 
 .intro {
@@ -21,6 +22,7 @@
 }
 
 .uitleg {
+    color:var(--fixed-text-color);
     background-color: $white;
     padding: 16px;
 }
@@ -70,4 +72,12 @@
 .sitemapimage {
     height: 40%;
     max-width:50%;
+}
+
+.uxtestimg {
+    float:right;
+    clear:right;
+    width: 45%;
+    height: auto;
+    margin-bottom: 20px;
 }

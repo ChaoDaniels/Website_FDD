@@ -12,13 +12,15 @@
     --accent-color: rgb(209, 236, 255);
     --hover-color: rgb(91, 180, 253);
     --text-color:black;
+    --fixed-text-color:black;
 }
   
 // Compliant colours (4.58 : 1 and 10.58 : 1)
 [data-theme="contrast"] {
     --accent-color: rgb(0, 119, 204);
     --hover-color: rgb(0, 68, 119);
-    --text-color: rgb(250, 254, 255);;
+    --text-color: rgb(250, 254, 255);
+    --fixed-text-color:black;
 }
 
 body {
@@ -27,6 +29,9 @@ body {
     font-family: 'Montserrat';
     overflow-x: hidden;
     color: var(--text-color);
+    .fixed-text-color {
+        color: var(--fixed-text-color);
+    }
 }
 
 .navbar a, #contrast-toggle {
