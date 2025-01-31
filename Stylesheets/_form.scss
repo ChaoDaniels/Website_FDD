@@ -15,9 +15,9 @@ $maxsizing: calc(100% - 2 * $spacing20);
 }
 
 .formimage {
+    margin-top: $spacing20;
     grid-area: image;
     background-color: var(--accent-color);
-    width: 99%;
 }
 
 .gegevens {
