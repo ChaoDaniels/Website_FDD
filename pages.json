@@ -4,6 +4,7 @@
     { "name": "Design", "url": "Lesstof/Design/design.html" },
     { "name": "Development", "url": "Lesstof/Development/development.html" },
     { "name": "Frameworks en SCSS", "url": "Lesstof/Development/frameworks_scss.html" },
+    { "name": "Generatieve AI", "url": "Lesstof/Design/genai.html" },
     { "name": "Gestaltprincipes", "url": "Lesstof/Design/gestaltprincipes.html" },
     { "name": "Git", "url": "Lesstof/Development/git.html" },
     { "name": "Home", "url": "index.html"},
