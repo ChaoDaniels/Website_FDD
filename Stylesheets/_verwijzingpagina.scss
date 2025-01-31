@@ -6,33 +6,26 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
     row-gap:20px;
     column-gap: 10px;
+    padding:20px;
     border-top:solid black 1px;
-    .lesstof {grid-template-rows: repeat(4, 200px);}
-    .design {grid-template-rows: repeat(10, 200px);}
-    .usability {grid-template-rows: repeat(5, 200px);}
-    .development {grid-template-rows: repeat(9, 200px);}
+    .lesstof, .design, .usability, .development {
+        grid-template-rows: auto;
+    }
 }
-
+/* 
 .image {
     grid-column: 3;
     width:100%;
 }
 .flatimg1 {grid-row: 1; grid-column: 1 / span 2;}
-.flatimg2 {grid-row: 2;}
-.flatimg3 {grid-row: 3;}
-.flatimg4 {grid-row: 4;}
-.flatimg5 {grid-row: 5;}
-.flatimg6 {grid-row: 6;}
-.flatimg7 {grid-row: 7;}
-.flatimg8 {grid-row: 8;}
-.flatimg9 {grid-row: 9;}
-
+ */
 .uitlegtekst {
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 3;
+    border-radius: 10px;
     padding: 10px;
     background-color: var(--accent-color);
 }
-.tekst0 {grid-row: 1; grid-column: 3;}
+.tekst0 {grid-row: 1;}
 .tekst1 {grid-row: 2;}
 .tekst2 {grid-row: 3;}
 .tekst3 {grid-row: 4;}
