@@ -16,14 +16,71 @@
             <div class="detail-container">
                 <div class="intro">
                     <h1>HyperText Markup Language</h1>
-                    <p class="vraag">Wat ?</p>
-                    <p></p>
-                    <p></p>
+                    <p class="vraag">Wat is HTML?</p>
+                    <p>HyperText Markup Language, meer bekend als HTML,
+                        is een programmeertaal waarmee de inhoud van een website wordt geschreven.
+                        Met HTML wordt inhoud zoals tekst opgedeeld in vierkanten, genaamd divs.
+                        Deze divs kunnen eigenschappen meekrijgen om 
+                        Andere talen, zoals CSS, kunnen deze eigenschappen herkennen
+                        en opmaak toevoegen, of ingewikkelde interactiviteit met JavaScript.</p>
                 </div>
                 <div class="uitleg">
-                    <h2>Mijn </h2>
+                    <h2>Hoe ziet HTML eruit?</h2>
+                    <p>Een simpel voorbeeld van HTML opmaak is het volgende:</p>
+                    <img src="./HTML_voorbeeld.png" alt="voorbeeld van simpel voorbeeld van HTML code">
+                    <p>Elke opmaak code wordt omgeven door de < en > tekens.
+                        Wat daarbinnnen staat geeft aan wat het item is.</p>
+                    <p>html geeft aan dat het document waar de code in wordt geschreven de nieuwste HTML versie is.
+                        In de head wordt belangrijke info gezet die niet inhoud is voor de website,
+                        zoals de titel van het tablad.
+                        In de body komt de inhoud te staan. h1 geeft aan dat de tekst kop 1 is.
+                        p geeft aan dat de tekst een paragraaf is en geen speciale opmaak heeft.</p>
+                    <p>De meeste items moeten ook weer worden afgesloten met /item.
+                        Zonder een / weet de computer niet dat dit stuk wordt afgesloten.
+                        Vergeet bijvoorbeeld /h1 en het onderstaande paragraaf is in kop 1 geschreven.</p>
+                    <p>Hoewel HTML een simpele programmeertaal is,
+                        betekent dat niet dat ik de hele taal op deze pagina kan uitleggen.
+                        Als je meer wilt leren over HTML,
+                        bekijk dan de onderstaande link naar W3Schools over HTML.
+                        Deze site wordt veel gebruikt voor het leren van nieuwe talen,
+                        ook door mij.</p>
+                    <a class="blue-btn" href="">HTML op W3Schools</a>
+                    <h2>CSS en JavaScript</h2>
+                    <p>Door classes en ids te gebruiken kan HTML code makkelijk worden aangehaald in anere talen.
+                        Het voorbeeld hierboven zou je kunnen uitbreiden met door de paragraaf een class en id te geven.
+                        Dan wordt de code:</p>
+                    <p> p class="groot" id="tekst1"</p>
                     <p>
+                        CSS en JavaScript kunnen hierdoor specifieke elementen vinden
+                        om stijl op toe te passen of functies aan toe te voegen.
+                        Om een CSS bestand aan te roepen in HTML
+                        moet de volgende regel in de head komen.
+                        Een voorbeeld hiervan is:
+                        link rel="stylesheet" href=”main.css"
                     </p>
+                    <p>
+                        Een JavaScript bestand moet juist in de body, en onderaan.
+                        script src=”interaction.js";>/script    
+                    </p>
+                    <p>
+                        Technisch gezien kan het bovenaan in de body,
+                        maar de code wordt van boven naar beneden gelezen.
+                        Als het bestand onderaan pas wordt aangehaald,
+                        heeft de computer de website en stjil al geladen
+                        als het begint aan het JavaScript bestand lezen.
+                        Als dit bovenaan staat,
+                        moet de rest van de website wachten totdat het JavaScript bestand is gelezen,
+                        terwijl het belangrijkste is dat de pagina leesbaar is.
+                    </p>
+                    <h2>Toegankelijkheid</h2>
+                    <p>
+                        Mijn doel was om de website toegankelijker te maken
+                        voor mensen die een screen reader nodig hebben.
+                        Daarvoor maak ik gebruik van semantisch HTML.
+                        Semantisch HTML is het gebruik van beschrijvende tags,
+                        in plaats van een element met een beschrijvende class.
+                    </p>
+                    <img src="SemantischHTML.png" style="max-width: 70%;">
                 </div>
                 <div class="vervolg">
                     <p>Hoe maak je de inhoud mooi?</p>
@@ -31,6 +88,9 @@
 
                     <p>En hoe maak je de inhoud dynamisch?</p>
                     <a href="./javascriptpagina.html">JavaScript</a>
+
+                    <p>Het belang van HTML bij het vindbaar maken van een website.</p>
+                    <a href="./seo.html">SEO</a>
                 </div>
             </div>
 
